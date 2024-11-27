@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Stack elements for smaller screens */
+    width: 100%;
+    margin-top: 50px; /* Reduce margin for smaller screens */
+    padding: 0 20px; /* Reduce side padding */
+    gap: 20px;
+    height: auto; /* Allow flexible height */
+}
+
+.main-left,
+.main-right {
+    width: 100%; /* Full-width for both sections */
+}
+
+.main-left .text-main h1 {
+    font-size: 32px; /* Smaller font size */
+    /* Center-align text */
+}
+
+.main-left .text-main h6 {
+    font-size: 16px; /* Smaller font for the subtitle */
+    /* Center-align text */
+    color: rgba(5, 15, 15, 0.7); /* Slightly darker color for visibility */
+}
+
+.main-right img {
+    width: 100%; /* Scale image to fit container */
+    position: relative; /* Remove absolute positioning */
+    margin: 20px auto; /* Center image */
+    display: block; /* Ensure proper centering */
+}
+
+.main-right img.shoe {
+    width: 100%; /* Resize for mobile */
+    position: relative; /* Remove absolute positioning */
+    top: auto; /* Reset top */
+    right: auto; /* Reset right */
+    margin: 0 auto; /* Center image */
+}
+
+/* .main-right img.background {
+    
+} */
+
+.frame {
+    margin-bottom: 30px; /* Reduce bottom margin */
+}
+
+@media (min-width: 1024px) {
+    .main {
+        display: flex;
+        flex-direction: row; /* Row layout for larger screens */
+        margin-top: 100px;
+        padding: 0 60px;
+        gap: 20px;
+        height: 100vh;
+    }
+
+    .main-left {
+        width: 50%;
+    }
+
+    .main-left .text-main h1 {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    .main-right {
+        width: 50%;
+        
+    }
+
+    .main-right img {
+        position: relative;
+        width: 100%;
+        top: 10px;
+    }
+
+    .main-right img.shoe {
+        width: 849px;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+
+    .main-right img.background {
+        width: 600px;
+        position: absolute;
+        top: 150px;
+        right: 150px;
+    }
+}

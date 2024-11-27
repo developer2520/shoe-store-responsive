@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-title {
+    text-align: center;
+    margin: 40px;
+}
+
+
+.table-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+
+.table-container .one img {
+    width: 100%;
+    height: auto; 
+}
+
+
+.table-container .minibox {
+    display: flex;
+    align-items: center;
+}
+
+
+.line {
+    margin-left: 30px;
+}
+
+
+.three {
+    position: relative;
+}
+
+.three img.qoraTufli {
+    width: 430px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+}
+
+
+@media (max-width: 868px) {
+   
+    .table-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px; 
+    }
+
+    
+    .one img {
+        width: 100%;
+        height: auto; 
+    }
+
+    
+    .three img.qoraTufli {
+        width: 100%; 
+        position: relative; 
+        top: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 60px 0 60px;
+    height: 73px;
+    overflow: hidden;
+    align-items: center;
+    
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    position: sticky ;
+    background-color: rgba(255, 255, 255, 0.658);
+    top: 0;
+    z-index: 1;
+}
+/* @media (min-width: 1024px){
+    .navbar .navigation {
+        display: flex;
+        gap: 80px;
+    }
+
+} */
+.navbar .logo {
+    width: 49px;
+}
+.navbar .navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .navigation  a {
+    color: rgba(5, 15, 15, 0.5);
+    cursor: pointer;
+    font-size: 15px;
+}
+.navbar .navigation  a:hover {
+    text-decoration: underline;
+}
+.navbar .button  {
+    background-color: rgba(87, 191, 193, 1);
+    color: white;
+    width: 194px ;
+    height: 48px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border-radius: 15px;
+    gap: 10px;
+    transition: 0.10s ease;
+    
+}
+
+.navbar .button:hover {
+    transform: scale(1.1);
+}
+.navbar .button a {
+    text-decoration: none;
+    color: white;
+}
+
+.menuButton img {
+    width: 39px;
+}
+.menuButton  {
+    display: none;
+    background-color: white;
+    border: none;
+}
+
+@media (max-width: 868px) {
+    .navigation {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #444;
+      padding: 1rem 0;
+    }
+    .button {
+        display: none !important;
+    }
+    .menuButton {
+        display: block;
+    }
+}  

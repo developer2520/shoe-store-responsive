@@ -1,0 +1,76 @@
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+
+.footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .logo img {
+    width: 33px;
+}
+
+.footer .logo h1 {
+    font-size: 16px;
+}
+
+
+.navi a {
+    color: rgba(249, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.navi a:hover {
+    text-decoration: underline;
+}
+
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.navigation-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+    border-bottom: 2px solid rgba(249, 255, 255, 0.5);
+}
+
+.buy {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.copyright h6 {
+    font-weight: 400;
+}
+
+
+@media (max-width: 968px) {
+    .navi {
+        display: flex;
+        flex-direction: column;
+        align-items: start; 
+        gap: 20px;
+    }
+}

@@ -1,50 +1,40 @@
-import React from 'react'
-import './navbar.css'
-import { Link } from 'react-scroll' 
-import Logo from '../../assets/navbar-logo.png'
-import { useState } from 'react'
-import Menu from '../../assets/menu.png'
-import FullPage from '../../pages/full/fullPage'                                                                               
- 
-
+import React, { useState } from 'react';
+import './navbar.css';
+import { Link } from 'react-router-dom';
+import Logo from '../../assets/navbar-logo.png';
+import Menu from '../../assets/menu.png';
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen)
-    }
   return (
-    <div className='navbar'>
-        <Link path="/" >
-        <img className='logo' src={Logo} alt="" />
-        
-        </Link>
-          
+    <div className="navbar">
+      <a href='/' className="logo-link">
+        <img className="logo" src={Logo} alt="Logo" />
+      </a>
 
-            <button className='menuButton' onClick={toggleMenu}>
-                <img src={Menu} alt="" />
+      <button className="menuButton" onClick={toggleMenu}>
+        <img src={Menu} alt="Menu" />
+      </button>
 
-            </button>
+      <div className={`navigation ${isMenuOpen ? 'active' : ''}`}>
+        <a href="#main" onClick={toggleMenu}>
+          Главная
+        </a>
+        <a href="#discounted" onClick={toggleMenu}>Оформление заказа</a>
+        <a href="#qrcode" onClick={toggleMenu}>Акция</a>
+        <a href="#why_us" onClick={toggleMenu}>Калькулятор стоимости</a>
+        <a href="#products" onClick={toggleMenu}>Товары в Москве</a>
+        <a href="#sizetable" onClick={toggleMenu}>Таблица размеров</a>
+      </div>
 
-
-        
-        <div className={`navigation ${isMenuOpen ?'active' : ''}`}>
-             <a href='#main' to='main' smooth={true} duration={500}>Главная</a>
-             <a href='#discounted' >Оформление заказа</a>
-             <a href='#' >Акция</a>
-             <a href='#about' >Калькулятор стоимости</a>
-             <a href='#products' >Товары в Москве</a>
-             <a href='#sizetable' >Таблица размеров</a> 
-        </div>
-        <div className="button">
-            {/* bu yerda button bor  */}
-           <a href="https://abboskhonov.t.me">Сделать заказ</a>
-           <i class="fa-solid fa-paper-plane"></i>
-            
-        </div>
-
-      
+      <div className="button">
+        <a href="https://abboskhonov.t.me">Сделать заказ</a>
+        <i className="fa-solid fa-paper-plane"></i>
+      </div>
     </div>
-  )
+  );
 }

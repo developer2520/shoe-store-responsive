@@ -31,7 +31,7 @@ export default function fullPage() {
           <Features />
         </div>
 
-        <section className='qrcode'>
+        <section id='qrcode'>
           <Qrcode />
         </section>
 
@@ -42,10 +42,14 @@ export default function fullPage() {
 
         </div>
 
-        
+        <section id='why_us'>
+        <WhyUs />
+
+
+        </section>
        
         
-        <WhyUs />
+       
 
         <section id='sizetable'>
         <SizeTable />

@@ -48,6 +48,7 @@
 .main-right img.shoe {
     width: 70%; /* Resize for mobile */
     position: relative;
+    right: 200px;
     z-index: 2; /* In front of the background */
 }
 
@@ -83,7 +84,7 @@
     }
 
     .main-right img.shoe {
-        width: 849px;
+        width: 100%;
         position: absolute;
         top: 10px;
         right: 30px;

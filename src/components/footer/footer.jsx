@@ -4,6 +4,12 @@ import './footer.css'
 import { Link } from 'react-router-dom'
 
 export default function footer() {
+
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  
   return (
     <div className='footer'>
         <div className="logo">
@@ -15,12 +21,14 @@ export default function footer() {
         <div className="navigation-footer">
 
         <div className="navi">
-             <a href='#main' >Главная</a>
-             <a href to='#about' >Акция</a>
-             <a href to='#about' >Оформление заказа</a>
-             <a href to='#about' >Калькулятор стоимости</a>
-             <a href='#products' >Товары в Москве</a>
-             <a href to='#about' >Таблица размеров</a> 
+        <a href="#main" onClick={toggleMenu}>
+          Главная
+        </a>
+        <a href="#discounted" onClick={toggleMenu}>Оформление заказа</a>
+        <a href="#qrcode" onClick={toggleMenu}>Акция</a>
+        <a href="#why_us" onClick={toggleMenu}>Калькулятор стоимости</a>
+        <a href="#products" onClick={toggleMenu}>Товары в Москве</a>
+        <a href="#sizetable" onClick={toggleMenu}>Таблица размеров</a>
         </div>
 
         <a className='buy' href="https://abboskhonov.t.me">Сделать заказ <i class="fa-solid fa-paper-plane"></i> </a>

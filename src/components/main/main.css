@@ -5,12 +5,12 @@
 
 .main {
     display: flex;
-    flex-direction: column; /* Stack elements for smaller screens */
+    flex-direction: column; /* Stack for smaller screens */
     width: 100%;
-    margin-top: 50px; /* Reduce margin for smaller screens */
-    padding: 0 20px; /* Reduce side padding */
+    margin-top: 50px; /* Adjust margin for mobile */
+    padding: 0 20px;
     gap: 20px;
-    height: auto; /* Allow flexible height */
+    height: auto; /* Flexible height */
 }
 
 .main-left,
@@ -19,47 +19,46 @@
 }
 
 .main-left .text-main h1 {
-    font-size: 32px; /* Smaller font size */
-    /* Center-align text */
+    font-size: 32px; /* Smaller text size */
+   
 }
 
 .main-left .text-main h6 {
-    font-size: 16px; /* Smaller font for the subtitle */
-    /* Center-align text */
-    color: rgba(5, 15, 15, 0.7); /* Slightly darker color for visibility */
+    font-size: 16px;
+    
+    color: rgba(5, 15, 15, 0.7);
 }
 
-.main-right img {
-    width: 100%; /* Scale image to fit container */
-    position: relative; /* Remove absolute positioning */
-    margin: 20px auto; /* Center image */
-    display: block; /* Ensure proper centering */
+.main-right {
+    position: relative; /* Relative positioning for layering */
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    height: auto;
+}
+
+.main-right img.background {
+    width: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+    position: absolute;
+    top: 0;
+    z-index: 1; /* Behind the shoe */
 }
 
 .main-right img.shoe {
-    width: 100%; /* Resize for mobile */
-    position: relative; /* Remove absolute positioning */
-    top: auto; /* Reset top */
-    right: auto; /* Reset right */
-    margin: 0 auto; /* Center image */
+    width: 70%; /* Resize for mobile */
+    position: relative;
+    z-index: 2; /* In front of the background */
 }
 
-/* .main-right img.background {
-    
-} */
-
-.frame {
-    margin-bottom: 30px; /* Reduce bottom margin */
-}
-
+/* Desktop (Large Screens) */
 @media (min-width: 1024px) {
     .main {
-        display: flex;
-        flex-direction: row; /* Row layout for larger screens */
+        flex-direction: row; /* Row layout for desktop */
         margin-top: 100px;
         padding: 0 60px;
         gap: 20px;
-        height: 100vh;
+        height: 100vh; /* Full viewport height */
     }
 
     .main-left {
@@ -73,13 +72,14 @@
 
     .main-right {
         width: 50%;
-        
     }
 
-    .main-right img {
-        position: relative;
-        width: 100%;
+    .main-right img.background {
+        width: 600px;
+        position: absolute;
         top: 10px;
+        right: 150px;
+        z-index: 1; /* Behind shoe */
     }
 
     .main-right img.shoe {
@@ -87,12 +87,6 @@
         position: absolute;
         top: 10px;
         right: 30px;
-    }
-
-    .main-right img.background {
-        width: 600px;
-        position: absolute;
-        top: 150px;
-        right: 150px;
+        z-index: 2; /* Above background */
     }
 }

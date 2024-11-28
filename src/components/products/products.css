@@ -48,7 +48,8 @@
     background-color: rgba(87, 191, 193, 0.06);
     border-radius: 8px; 
     overflow: hidden; 
-    height: 100%; 
+    height: auto; 
+    object-fit: cover   ;
 }
 
 .productsPage .product img {

@@ -31,14 +31,14 @@ export default function Navbar() {
         
         <div className={`navigation ${isMenuOpen ?'active' : ''}`}>
              <a href='#main' to='main' smooth={true} duration={500}>Главная</a>
-             <a to='#about' >Оформление заказа</a>
-             <a to='#' >Акция</a>
-             <a to='#about' >Калькулятор стоимости</a>
-             <a to='#products' >Товары в Москве</a>
-             <a to='#about' >Таблица размеров</a> 
+             <a href='#discounted' >Оформление заказа</a>
+             <a href='#' >Акция</a>
+             <a href='#about' >Калькулятор стоимости</a>
+             <a href='#products' >Товары в Москве</a>
+             <a href='#sizetable' >Таблица размеров</a> 
         </div>
         <div className="button">
-            {/* bu yerda buton bor  */}
+            {/* bu yerda button bor  */}
            <a href="https://abboskhonov.t.me">Сделать заказ</a>
            <i class="fa-solid fa-paper-plane"></i>
             

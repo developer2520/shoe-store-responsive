@@ -8,6 +8,8 @@ import Product from '../../components/product/product';
 import SizeTable from '../../components/sizeTable/sizeTable';
 import Footer from '../../components/footer/footer';
 import Features from '../../components/features/features';
+import Discounted from '../../components/discounted/discounted';
+import Qrcode from '../../components/qrcode/qrcode';
 
 
 export default function fullPage() {
@@ -19,20 +21,39 @@ export default function fullPage() {
         <Main />
         </section>
 
-        <div className="products">
+        <section id='discounted'>
+
+          <Discounted />
+
+
+        </section>
+        <div id="features">
+          <Features />
+        </div>
+
+        <section className='qrcode'>
+          <Qrcode />
+        </section>
+
+        <div id="products">
 
         <Products />
 
 
         </div>
 
-        <div id="features">
-          <Features />
-        </div>
+        
        
         
         <WhyUs />
+
+        <section id='sizetable'>
         <SizeTable />
+
+
+
+        </section>
+      
         <Footer />
       
     </div>

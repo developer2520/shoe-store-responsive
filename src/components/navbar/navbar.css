@@ -37,6 +37,7 @@
     color: rgba(5, 15, 15, 0.5);
     cursor: pointer;
     font-size: 15px;
+    text-decoration: none;
 }
 .navbar .navigation  a:hover {
     text-decoration: underline;

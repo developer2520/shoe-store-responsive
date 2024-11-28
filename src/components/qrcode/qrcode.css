@@ -1,0 +1,134 @@
+.qr-code-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 40px;
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .qr-code-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .qr-code-container .left-side, 
+    .qr-code-container .right-side {
+        width: 100%;
+        padding: 20px;
+        height: 60vh;
+    }
+
+    .right-side .second img {
+        width: 400px;
+        position: absolute;
+        bottom: 20px;
+        height: auto;
+        border-radius: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+}
+
+.qr-code-container .left-side {
+    background-color: rgba(87, 191, 193, 0.06);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    gap: 20px;
+    height: 70%;
+}
+
+.qr-code-container .left-side h1 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.qr-code-container .left-side h6 {
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 50px;
+    color: rgba(5, 15, 15, 0.5);
+}
+
+.qr-code-container .left-side input {
+    background-color: unset;
+    border: 2px solid rgba(87, 191, 193, 1);
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 200px;
+    color: rgba(87, 191, 193, 1);
+    border-radius: 20px;
+    outline: none;
+}
+
+.qr-code-container .right-side {
+    background-color: rgba(87, 191, 193, 1);
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 60%;
+    color: white;
+}
+.qr-code-container .right-side h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.qr-code-container .right-side h6 {
+    color: rgba(249, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+.right-side .second  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.right-side .first .qr-code-container-img {
+    background-color: rgba(249, 255, 255, 0.15);
+    width: 166px;
+    height: 166px;
+    padding: 1rem;
+    border-radius: 15px;
+    z-index: 10000;
+    margin: 30px 0 30px 0;
+}
+
+.right-side .first img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    align-items: start;
+}
+
+.submit-form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.submit-form button:nth-child(1) {
+    padding: 10px 30px;
+    background-color: rgba(87, 191, 193, 0.15);
+    border: none;
+    border-radius: 20px;
+    color: rgba(87, 191, 193, 1);
+}
+
+.submit-form button:nth-child(2) {
+    padding: 10px;
+    width: 40px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(87, 191, 193, 1);
+}

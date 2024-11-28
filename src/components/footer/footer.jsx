@@ -15,12 +15,12 @@ export default function footer() {
         <div className="navigation-footer">
 
         <div className="navi">
-             <Link to='#about' >Главная</Link>
-             <Link to='#about' >Акция</Link>
-             <Link to='#about' >Оформление заказа</Link>
-             <Link to='#about' >Калькулятор стоимости</Link>
-             <Link to='#about' >Товары в Москве</Link>
-             <Link to='#about' >Таблица размеров</Link> 
+             <a href='#main' >Главная</a>
+             <a href to='#about' >Акция</a>
+             <a href to='#about' >Оформление заказа</a>
+             <a href to='#about' >Калькулятор стоимости</a>
+             <a href='#products' >Товары в Москве</a>
+             <a href to='#about' >Таблица размеров</a> 
         </div>
 
         <a className='buy' href="https://abboskhonov.t.me">Сделать заказ <i class="fa-solid fa-paper-plane"></i> </a>

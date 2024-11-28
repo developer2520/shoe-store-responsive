@@ -1,0 +1,69 @@
+.discountedPage {
+    width: 100%;
+    height: 10%;
+    background-color: rgba(87, 191, 193, 1);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.discountedPage .section1 h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+.discountedPage .section1 h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+.discountedPage .section1 {
+    padding: 50px;
+}
+.discountedPage .section1 img {
+    width: 900px;
+    transform: translateY(55px);
+}
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.section2 .card {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+
+}
+.section3 .card {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 15px;
+
+}
+/* .section {
+    width: 30%;
+} */
+ .section .card:nth-child(1) {
+    transform: translate(-100%);
+ }
+ .section .card:nth-child(3) {
+    transform: translate(-100%);
+ }
+ @media (max-width: 1000px) {
+    .discountedPage {
+        width: 100%;
+        height: 10%;
+        background-color: rgba(87, 191, 193, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .discountedPage .section1 img {
+        width: 6    50px;
+    } 
+
+ }

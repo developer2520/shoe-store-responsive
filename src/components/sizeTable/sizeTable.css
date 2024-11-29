@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+body {
+    overflow-x: hidden;
+}
 
 .main-title {
     text-align: center;
@@ -25,7 +27,7 @@
 .table-container .one img {
     width: 100%;
     height: auto; 
-    
+
 }
 
 
@@ -45,7 +47,7 @@
 }
 
 .three img.qoraTufli {
-    width: 430px;
+    max-width: 100%;
     position: absolute;
     top: 20px;
     left: 0;

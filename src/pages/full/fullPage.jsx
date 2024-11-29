@@ -1,4 +1,5 @@
 import React from 'react'
+import './fullPage.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '../../components/navbar/navbar';
 import Main from '../../components/main/main';

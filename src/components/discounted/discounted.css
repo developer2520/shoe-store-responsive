@@ -30,12 +30,12 @@
     transform: translateY(55px);
 }
 
-/* Desktop Layout */
+
 .section2, .section3 {
     display: flex;
-    flex-direction: column; /* Change to column in desktop as well */
+    flex-direction: column; 
     gap: 20px;
-    width: 100%; /* Ensure full width for cards */
+    width: 100%; 
 }
 
 .section2 .card, .section3 .card {
@@ -62,13 +62,13 @@
     font-weight: 600;
 }
 
-/* Apply translateX only to the first and last card in section2 and section3 for desktop */
+
 .section2 .card:first-child, .section2 .card:last-child,
 .section3 .card:first-child, .section3 .card:last-child {
     transform: translateX(-100%);
 }
 
-/* Mobile Styles */
+
 @media (max-width: 1000px) {
     .discountedPage {
         display: flex;
@@ -77,33 +77,33 @@
     }
 
     .discountedPage .section1 img {
-        width: 200%; /* Adjust image size to be responsive */
+        width: 200%; 
         margin: 0 auto;
         display: block;
-        max-width: 650px; /* Ensure it doesn't get too big */
+        max-width: 650px; 
     }
 
     .discountedPage .section1 h1 {
-        font-size: 28px; /* Scale text for mobile */
+        font-size: 28px;
     }
 
     .discountedPage .section1 h6 {
-        font-size: 16px; /* Scale text for mobile */
+        font-size: 16px; 
     }
 
-    /* Stack the cards in column on mobile */
+    
     .section2, .section3 {
-        flex-direction: column;  /* Stack the cards */
-        gap: 15px;  /* Reduced gap for mobile */
+        flex-direction: column;
+        gap: 15px;  
     }
 
-    /* Adjust the card width for mobile */
+   
     .section2 .card, .section3 .card {
-        width: 90%;  /* Make cards take up more space on small screens */
-        margin: 0 auto;  /* Center the cards */
+        width: 90%;  
+        margin: 0 auto;
     }
 
-    /* Reset the translate for the first and last card on mobile */
+ 
     .section2 .card:first-child, .section2 .card:last-child,
     .section3 .card:first-child, .section3 .card:last-child {
         transform: translateX(0) !important;

@@ -1,7 +1,7 @@
 [
   {
       "id": 1,
-      "img": "/public/sneakers-img/sneaker1.png",
+      "img": "/sneakers-img/sneaker1.png",
       "title": "Nike Air Zoom Pegasus 39 - Best Running Shoes Ever",
       "description": "Versatile running shoes with superior cushioning and comfort. Designed to support your daily training sessions, these shoes offer excellent durability and a responsive ride. The breathable mesh upper ensures ventilation, while the Zoom Air unit provides optimal energy return. Perfect for both beginners and seasoned runners looking for reliable performance and style.",
       "discounted_price": 89.99,
@@ -10,7 +10,7 @@
   },
   {
       "id": 2,
-      "img": "/public/sneakers-img/sneaker2.png",
+      "img": "/sneakers-img/sneaker2.png",
       "title": "Adidas Ultraboost 22 - Iconic Comfortable Shoes for Athletes",
       "description": "Comfortable, high-performance shoes for athletes and casual wear. Crafted with a Primeknit upper for a snug fit, these sneakers feature Boost technology for exceptional energy return. The Continental Rubber outsole ensures excellent grip on various surfaces, making them ideal for urban adventures or gym sessions. With their sleek design and premium build, they stand out.",
       "discounted_price": 135.00,
@@ -19,7 +19,7 @@
   },
   {
       "id": 3,
-      "img": "/public/sneakers-img/skeakder3.png",
+      "img": "/sneakers-img/skeakder3.png",
       "title": "Puma RS-X3 Puzzle - Stylish Retro Sneakers for Every Day",
       "description": "A stylish and colorful sneaker, ideal for everyday wear. Featuring a retro-inspired design with bold color combinations, these shoes stand out in any crowd. The lightweight cushioning provides all-day comfort, while the durable outsole ensures long-lasting wear. Perfect for streetwear enthusiasts looking to elevate their casual outfits with vibrant, timeless designs.",
       "discounted_price": 75.00,
@@ -28,7 +28,7 @@
   },
   {
       "id": 4,
-      "img": "/public/sneakers-img/sneaker4.png",
+      "img": "/sneakers-img/sneaker4.png",
       "title": "Reebok Classic Leather - Iconic Sneakers for Timeless Style",
       "description": "Timeless design with a blend of leather and soft cushioning. This iconic silhouette offers unmatched style and versatility. The die-cut EVA midsole ensures lightweight comfort, while the rubber outsole provides excellent traction. Suitable for casual outings or retro-inspired looks. A must-have for anyone who appreciates classic footwear designs and enduring comfort.",
       "discounted_price": 65.00,
@@ -37,7 +37,7 @@
   },
   {
       "id": 5,
-      "img": "/public/sneakers-img/sneaker5.png",
+      "img": "/sneakers-img/sneaker5.png",
       "title": "New Balance 990v5 - Premium Sneakers Balancing Style and Comfort",
       "description": "Premium sneakers with a perfect balance of style and performance. Built for those who demand both functionality and aesthetics, these shoes feature a durable suede and mesh upper. The ENCAP midsole provides superior cushioning and support. Perfect for long walks, urban commutes, or casual outings, they redefine luxury in everyday footwear.",
       "discounted_price": 150.00,
@@ -46,7 +46,7 @@
   },
   {
       "id": 6,
-      "img": "/public/sneakers-img/sneakder6.png",
+      "img": "/sneakers-img/sneakder6.png",
       "title": "Asics Gel-Kayano 28 - Performance Running Shoes for Endurance",
       "description": "A performance running shoe with advanced gel technology. Designed to provide long-lasting comfort and stability, the Gel-Kayano 28 offers a supportive structure ideal for long-distance runners. The lightweight mesh upper provides breathability, and the EVA midsole cushions every stride. Ideal for athletes and anyone in need of a high-quality, durable running shoe.",
       "discounted_price": 120.00,
@@ -55,7 +55,7 @@
   },
   {
       "id": 7,
-      "img": "/public/sneakers-img/sneaker7.png",
+      "img": "/sneakers-img/sneaker7.png",
       "title": "Under Armour HOVR Phantom 2 - High-Tech Shoes for Runners",
       "description": "Running shoes that provide unmatched cushioning and energy return. Equipped with HOVR technology, these shoes offer superior responsiveness and absorb impact on every step. The engineered mesh upper provides a comfortable, breathable fit. Whether you're running, working out, or simply walking, these shoes provide the comfort and performance you need.",
       "discounted_price": 115.00,
@@ -64,7 +64,7 @@
   },
   {
       "id": 8,
-      "img": "/public/sneakers-img/sneaker8.png",
+      "img": "/sneakers-img/sneaker8.png",
       "title": "Nike Air Max 270 React - Stylish Sneakers for All-Day Comfort",
       "description": "A perfect blend of comfort, style, and responsive cushioning. The Nike Air Max 270 React features a lightweight upper for breathability and a responsive midsole for a soft, cushioned feel. The iconic Air Max unit in the heel provides maximum impact protection. Perfect for casual wear or light workouts, they combine fashion and function effortlessly.",
       "discounted_price": 130.00,

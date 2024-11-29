@@ -53,10 +53,12 @@
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 10px;
+    display: block;
 }
 
 .copyright {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 20px 0;
 }
@@ -73,4 +75,27 @@
         align-items: start; 
         gap: 20px;
     }
+    .navi {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.footer-nav-and-link-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 968px) {
+    .footer-nav-and-link-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-nav-and-link-container  a.buy {
+        margin: 20px 0 20px 0;
+    }
+    
 }

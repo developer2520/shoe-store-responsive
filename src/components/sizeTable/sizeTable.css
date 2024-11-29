@@ -18,12 +18,14 @@
     justify-content: space-between;
     gap: 50px;
     margin-bottom: 40px;
+    height: auto;
 }
 
 
 .table-container .one img {
     width: 100%;
     height: auto; 
+    
 }
 
 
@@ -72,5 +74,8 @@
         position: relative; 
         top: 0;
         margin: 0;
+    }
+    .vektor {
+        width: 10vw;
     }
 }

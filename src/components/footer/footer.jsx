@@ -19,8 +19,8 @@ export default function footer() {
         </div>
 
         <div className="navigation-footer">
-
-        <div className="navi">
+<div className="footer-nav-and-link-container">
+<div className="navi">
         <a href="#main" onClick={toggleMenu}>
           Главная
         </a>
@@ -31,7 +31,13 @@ export default function footer() {
         <a href="#sizetable" onClick={toggleMenu}>Таблица размеров</a>
         </div>
 
-        <a className='buy' href="https://abboskhonov.t.me">Сделать заказ <i class="fa-solid fa-paper-plane"></i> </a>
+        <a className='buy' href="https://abboskhonov.t.me">Сделать заказ <i class="fa-solid fa-paper-plane"></i> </a>                                                     
+
+
+
+
+</div>
+        
 
 
         </div>

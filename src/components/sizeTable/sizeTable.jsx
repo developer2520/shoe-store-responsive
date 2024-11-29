@@ -46,7 +46,7 @@ export default function sizeTable() {
 
         <div className="three">
             <img className='qoraTufli' src={QoraTufli} alt="" />
-            <img src={Vektor} alt="" />
+            <img className='vektor' src={Vektor} alt="" />
 
         </div>
       

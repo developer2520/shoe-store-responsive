@@ -87,9 +87,11 @@
       display: none;
       flex-direction: column;
       position: absolute;
+      align-items: center;
       top: 100%;
       left: 0;
       width: 100%;
+      height: 100vh;
       
       background-color: rgba(255, 255, 255, 0.658);
     backdrop-filter: blur(10px); /* Apply the blur effect */
@@ -101,8 +103,8 @@
       align-items: center;
      
     }
-    .navigation a {
-        font-size: 30px;
+    .navigation .navi  a {
+        font-size: 50px;
     }
   
     .navbar .button {
